@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import HUD from "./components/hud";
 import Section from "./components/Section";
+import FkaTwigsPhotographs from "./components/FkaTwigsPhotographs";
+import PhotographyHomePage from "./components/PhotographyHomePage";
 
 function App() {
   const [isDark, setIsDark] = useState(false);
@@ -21,12 +23,10 @@ function App() {
         <p>This is my portfolio homepage.</p>
       </Section>
       <Section id="photography">
-        <h2 className="text-4xl font-semibold mb-2">Photography</h2>
-        <p>Photos will go here.</p>
-        <img
-          src="https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/DSCF7683.jpg"
-          alt="Image of FKA Twigs performing during her Magdelene tour at the Mission Ballroom in Denver, Colorado"
-        />
+        <PhotographyHomePage />
+      </Section>
+      <Section id="fka-twigs">
+        <FkaTwigsPhotographs />
       </Section>
       <Section id="design">
         <h2 className="text-4xl font-semibold mb-2">Design</h2>
