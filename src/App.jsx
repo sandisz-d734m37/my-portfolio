@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import HUD from "./components/hud";
+import Section from "./components/Section";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="bg-neutral-200 text-neutral-900 min-h-screen font-sans">
+      <HUD />
+      <Section id="home">
+        <h1 className="text-5xl font-bold mb-4">Welcome</h1>
+        <p>This is your portfolio homepage.</p>
+      </Section>
+      <Section id="photography">
+        <h2 className="text-4xl font-semibold mb-2">Photography</h2>
+        <p>Photos will go here.</p>
+      </Section>
+      <Section id="design">
+        <h2 className="text-4xl font-semibold mb-2">Design</h2>
+        <p>Design projects will go here.</p>
+      </Section>
+      <Section id="contact">
+        <h2 className="text-4xl font-semibold mb-2">Contact</h2>
+        <p>Get in touch form or email goes here.</p>
+      </Section>
+    </div>
+  );
 }
 
-export default App
+export default App;
