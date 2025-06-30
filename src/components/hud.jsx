@@ -4,7 +4,7 @@ export default function HUD({ toggleTheme, isDark }) {
   };
 
   return (
-    <div className="fixed top-6 left-6 z-50 bg-white/90 dark:bg-neutral-700 backdrop-blur-lg shadow-md rounded-xl p-4 flex flex-col space-y-2">
+    <div className="transition-colors duration-500 fixed top-6 left-6 z-50 bg-white/90 dark:bg-neutral-700 backdrop-blur-lg shadow-md rounded-xl p-4 flex flex-col space-y-2">
       <button onClick={() => scrollTo("home")}>Home</button>
       <button onClick={() => scrollTo("photography")}>Photography</button>
       <button onClick={() => scrollTo("design")}>Design</button>
