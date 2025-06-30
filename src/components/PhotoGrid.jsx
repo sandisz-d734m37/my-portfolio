@@ -79,7 +79,7 @@ export default function PhotoGrid({ photos }) {
 
             <button
               onClick={closeLightbox}
-              className="absolute top-2 right-2 text-white text-xl"
+              className="fixed top-6 right-6 text-white text-xl z-50"
             >
               ✕
             </button>
