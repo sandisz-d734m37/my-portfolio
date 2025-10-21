@@ -11,7 +11,7 @@ const photos = [
   },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/FKA_TWIGS/DSCF7556.jpg",
-    alt: "FKA Twigs - Dreamy proffesional photograph of FKA Twigs and her dancers performing her Magdelene album on tour at the Mission Ballroom in Denver, Colorado",
+    alt: "FKA Twigs - Dreamy professional photograph of FKA Twigs and her dancers performing her Magdelene album on tour at the Mission Ballroom in Denver, Colorado",
   },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/puppet_theater/DSC04889.jpg",
@@ -19,7 +19,7 @@ const photos = [
   },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/puppet_theater/pantses2.jpg",
-    alt: "pants - Proffesional ecommerce flatlay photograph of 3 uniquely styled pants, one cargo pant, one dress pant, and one sweat pant.",
+    alt: "pants - professional ecommerce flatlay photograph of 3 uniquely styled pants, one cargo pant, one dress pant, and one sweat pant.",
   },
 ];
 

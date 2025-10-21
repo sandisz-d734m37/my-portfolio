@@ -3,11 +3,11 @@ import PhotoGrid from "./PhotoGrid";
 const photos = [
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Cradle_Of_Filth/cradle_fman_1_dupe.jpg",
-    alt: "Proffesional photograph of Cradle of Filth front man perfoming, screaming into a mic on the Screaming of the Valkeries tour",
+    alt: "professional photograph of Cradle of Filth front man perfoming, screaming into a mic on the Screaming of the Valkeries tour",
   },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Cradle_Of_Filth/cradle_fman_close.jpg",
-    alt: "Proffesional close up photograph of Cradle of Filth front man performing on the Screaming of the Valkyries tour",
+    alt: "professional close up photograph of Cradle of Filth front man performing on the Screaming of the Valkyries tour",
   },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Cradle_Of_Filth/cradle_gtar_1.jpg",
@@ -19,11 +19,11 @@ const photos = [
   },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Dir+En+Grey/dir-en-greay-fman-close-color.jpg",
-    alt: "Proffesional Close Up Photograph of Japanese Heavy Metal band Dir En Grey frontman performing in Denver, Colorado",
+    alt: "professional Close Up Photograph of Japanese Heavy Metal band Dir En Grey frontman performing in Denver, Colorado",
   },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Dir+En+Grey/dir-en-greay-gtar.jpg",
-    alt: "Proffesional Concert Photograph of Japanese Heavy Metal band Dir En Grey Guitarist with dreamy hair cut",
+    alt: "professional Concert Photograph of Japanese Heavy Metal band Dir En Grey Guitarist with dreamy hair cut",
   },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/BrockHampton/BHMPTN+-+light+whole+band.jpg",
