@@ -50,9 +50,12 @@ export default function LegendNav({ sections, onToggle }) {
   }
 
   return (
-    <div className="fixed left-0 top-0 bottom-0 flex border-r border-black dark:border-white bg-white dark:bg-neutral-800 transition-all duration-300 z-50">
+    <div
+      className="fixed left-0 top-0 bottom-0 flex border-r border-black dark:border-white bg-white
+                    dark:bg-neutral-800 transition-all duration-300 z-50"
+    >
       {/* Left column: line + red dot */}
-      <div className="relative w-12 flex flex-col items-center py-6">
+      <div className="relative lg:w-12 w-5 flex flex-col items-center py-6">
         <button
           onClick={handleToggle}
           className="mb-4 relative w-6 h-6 flex flex-col justify-center items-center gap-1"
@@ -100,7 +103,7 @@ export default function LegendNav({ sections, onToggle }) {
           >
             {/* Red dot */}
             <div
-              className="absolute left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full bg-red-600 border border-red-600 transition-all duration-150"
+              className="absolute left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full bg-black border border-black transition-all duration-150"
               style={{ top: `calc(${scrollPercent * 100}% - 0.5rem)` }}
             />
           </div>
