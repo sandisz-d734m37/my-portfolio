@@ -3,6 +3,7 @@ import LegendNav from "./components/legendNav";
 import Section from "./components/Section";
 import FkaTwigsPhotographs from "./components/FkaTwigsPhotographs";
 import MiscelaniousConcerts from "./components/MiscelaniousConcerts";
+import EcomPhotography from "./components/EcomPhotography";
 import PhotographyHomePage from "./components/PhotographyHomePage";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
   const sections = [
     { id: "home", label: "Home" },
     { id: "photography", label: "Photography" },
+    { id: "ecom-photography", label: "Ecommerce Photography" },
     { id: "fka-twigs", label: "FKA Twigs" },
     { id: "misc-concerts", label: "Misc. Concert Photographs" },
     { id: "design", label: "Design" },
@@ -35,6 +37,10 @@ function App() {
 
         <Section id="photography">
           <PhotographyHomePage />
+        </Section>
+
+        <Section id="ecom-photography">
+          <EcomPhotography />
         </Section>
 
         <Section id="fka-twigs">
