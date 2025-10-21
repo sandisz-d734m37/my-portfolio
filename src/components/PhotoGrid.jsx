@@ -137,7 +137,8 @@ export default function PhotoGrid({ photos }) {
   return (
     <>
       {/* Grid */}
-      <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
+      {/* <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4"> */}
+      <div className="columns-2 sm:columns-3 md:columns-2 gap-4 space-y-4">
         {shuffledPhotos.map((photo, index) => (
           <img
             key={index}
@@ -164,10 +165,7 @@ export default function PhotoGrid({ photos }) {
             <div
               ref={containerRef}
               onClick={(e) => e.stopPropagation()}
-              className={`relative overflow-auto ${
-                zoomed ? "" : "flex items-center justify-center"
-              }`}
-              style={{ maxHeight: "95vh" }}
+              className="relative w-screen h-screen flex items-center justify-center overflow-hidden"
             >
               <img
                 ref={imageRef}
@@ -186,10 +184,9 @@ export default function PhotoGrid({ photos }) {
                         cursor: "zoom-out",
                       }
                     : {
-                        width: "auto",
-                        height: "auto",
-                        maxWidth: "100%",
-                        maxHeight: "95vh",
+                        width: "100vw", // mobile full width
+                        height: "100vh", // mobile full height
+                        objectFit: "contain", // scale down if needed
                         cursor: "zoom-in",
                       }
                 }
