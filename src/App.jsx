@@ -6,17 +6,18 @@ import FkaTwigsPhotographs from "./components/FkaTwigsPhotographs";
 import MiscelaniousConcerts from "./components/MiscelaniousConcerts";
 import EcomPhotography from "./components/EcomPhotography";
 import PhotographyHomePage from "./components/PhotographyHomePage";
+import ProducedGarments from "./components/ProducedGarments";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const sections = [
     { id: "home", label: "Home" },
+    { id: "produced-garments", label: "Produced Garments" },
     { id: "photography", label: "Photography" },
     { id: "ecom-photography", label: "Ecommerce Photography" },
     { id: "fka-twigs", label: "FKA Twigs" },
     { id: "misc-concerts", label: "Misc. Concert Photographs" },
-    { id: "design", label: "Design" },
     { id: "contact", label: "Contact" },
   ];
 
@@ -45,8 +46,6 @@ function App() {
             <div class="text-center py-[40vh]">
               <h1 className="text-5xl font-bold mb-4">Sandisz C.M. Thieme</h1>
               <p class="google-sans-code-mypfolio">Welcome</p>
-
-              {/* Right column: sidebar */}
               <div className="d-flex flex-col gap-3 py-5">
                 {sections.map((section, idx) => (
                   <button
@@ -61,6 +60,10 @@ function App() {
             </div>
           </div>
         </FullScreenSection>
+
+        <Section id="produced-garments">
+          <ProducedGarments />
+        </Section>
 
         <Section id="photography">
           <PhotographyHomePage />
@@ -78,14 +81,14 @@ function App() {
           <MiscelaniousConcerts />
         </Section>
 
-        <Section id="design">
-          <h2 className="text-4xl font-semibold mb-2">Design</h2>
-          <p>Design projects will go here.</p>
-        </Section>
-
         <Section id="contact">
           <h2 className="text-4xl font-semibold mb-2">Contact</h2>
-          <p>Get in touch form or email goes here.</p>
+          <p>
+            <a href="https://www.instagram.com/sadnisz/">@sadnisz</a>
+          </p>
+          <p>
+            <a href="mailto:sandiszthieme@gmail.com">sandiszthieme@gmail.com</a>
+          </p>
         </Section>
       </div>
     </div>
