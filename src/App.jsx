@@ -2,7 +2,7 @@ import { useState } from "react";
 import LegendNav from "./components/legendNav";
 import Section from "./components/Section";
 import FullScreenSection from "./components/FullScreenSection";
-import FkaTwigsPhotographs from "./components/FkaTwigsPhotographs";
+// import FkaTwigsPhotographs from "./components/FkaTwigsPhotographs";
 import MiscelaniousConcerts from "./components/MiscelaniousConcerts";
 import EcomPhotography from "./components/EcomPhotography";
 import PhotographyHomePage from "./components/PhotographyHomePage";
@@ -14,10 +14,10 @@ function App() {
   const sections = [
     { id: "home", label: "Home" },
     { id: "produced-garments", label: "Produced Garments" },
-    { id: "photography", label: "Photography" },
     { id: "ecom-photography", label: "Ecommerce Photography" },
-    { id: "fka-twigs", label: "FKA Twigs" },
-    { id: "misc-concerts", label: "Misc. Concert Photographs" },
+    { id: "photography", label: "Misc. Photography" },
+    // { id: "fka-twigs", label: "FKA Twigs" },
+    { id: "misc-concerts", label: "Misc. Concert Photography" },
     { id: "contact", label: "Contact" },
   ];
 
@@ -65,17 +65,17 @@ function App() {
           <ProducedGarments />
         </Section>
 
-        <Section id="photography">
-          <PhotographyHomePage />
-        </Section>
-
         <Section id="ecom-photography">
           <EcomPhotography />
         </Section>
 
-        <Section id="fka-twigs">
-          <FkaTwigsPhotographs />
+        <Section id="photography">
+          <PhotographyHomePage />
         </Section>
+
+        {/* <Section id="fka-twigs">
+          <FkaTwigsPhotographs />
+        </Section> */}
 
         <Section id="misc-concerts">
           <MiscelaniousConcerts />

@@ -1,34 +1,38 @@
 import GarmentTechpack from "./GarmentTechpack";
 
 const garments = [
-  // {
-  //   garmentPhoto: {
-  //     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/OnModelEcom/DSC04432.jpg",
-  //     alt: "Professional On Model Ecom Photograph for Denver based elevated streetwear brand Puppet Theater",
-  //   },
-  //   techpackPhotos: [
-  //     {
-  //       src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/KumriReEdition/Kumri-Re-Edition-Final-p2.jpg",
-  //       alt: "Professional On Model Ecom Photograph for Denver based elevated streetwear brand Puppet Theater",
-  //     },
-  //     {
-  //       src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/KumriReEdition/Kumri-Re-Edition-Final-p3.jpg",
-  //       alt: "Professional On Model Ecom Photograph for Denver based elevated streetwear brand Puppet Theater",
-  //     },
-  //     {
-  //       src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/KumriReEdition/Kumri-Re-Edition-Final-p4.jpg",
-  //       alt: "Professional On Model Ecom Photograph for Denver based elevated streetwear brand Puppet Theater",
-  //     },
-  //     {
-  //       src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/KumriReEdition/Kumri-Re-Edition-Final-p5.jpg",
-  //       alt: "Professional On Model Ecom Photograph for Denver based elevated streetwear brand Puppet Theater",
-  //     },
-  //     {
-  //       src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/KumriReEdition/Kumri-Re-Edition-Final-p6.jpg",
-  //       alt: "Professional On Model Ecom Photograph for Denver based elevated streetwear brand Puppet Theater",
-  //     },
-  //   ],
-  // },
+  {
+    garmentPhoto: {
+      src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/KumriReEdition/IMG_4187.jpeg",
+      alt: "Professional On Model Ecom Photograph for Denver based elevated streetwear brand Puppet Theater",
+    },
+    techpackPhotos: [
+      {
+        src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/KumriReEdition/Kumri-Re-Edition-Final-p1.jpg",
+        alt: "Kumri Re-Edition Technical Pack and Designer's work",
+      },
+      {
+        src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/KumriReEdition/Kumri-Re-Edition-Final-p2.jpg",
+        alt: "Kumri Re-Edition Technical Pack and Designer's work",
+      },
+      {
+        src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/KumriReEdition/Kumri-Re-Edition-Final-p3.jpg",
+        alt: "Kumri Re-Edition Technical Pack and Designer's work",
+      },
+      {
+        src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/KumriReEdition/Kumri-Re-Edition-Final-p4.jpg",
+        alt: "Kumri Re-Edition Technical Pack and Designer's work",
+      },
+      {
+        src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/KumriReEdition/Kumri-Re-Edition-Final-p5.jpg",
+        alt: "Kumri Re-Edition Technical Pack and Designer's work",
+      },
+      {
+        src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/KumriReEdition/Kumri-Re-Edition-Final-p6.jpg",
+        alt: "Kumri Re-Edition Technical Pack and Designer's work",
+      },
+    ],
+  },
   {
     garmentPhoto: {
       src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/OnModelEcom/multi-act+Lookbook+RE-EDITED/DSC03369.jpg",
