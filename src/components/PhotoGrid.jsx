@@ -64,73 +64,129 @@ export default function PhotoGrid({ photos }) {
   };
 
   // Click-to-zoom handler that focuses on click position
-  const handleZoomClick = (e) => {
-    e.stopPropagation();
-    if (!containerRef.current || !imageRef.current) return;
+  // const handleZoomClick = (e) => {
+  //   e.stopPropagation();
+  //   if (!containerRef.current || !imageRef.current) return;
 
+  //   const img = imageRef.current;
+  //   const container = containerRef.current;
+
+  //   // image bounding rect BEFORE toggling zoom (this represents FIT state)
+  //   const imgRect = img.getBoundingClientRect();
+
+  //   // click position relative to image
+  //   const clickX = e.clientX - imgRect.left;
+  //   const clickY = e.clientY - imgRect.top;
+
+  //   // percent across image
+  //   const percentX = imgRect.width > 0 ? clickX / imgRect.width : 0.5;
+  //   const percentY = imgRect.height > 0 ? clickY / imgRect.height : 0.5;
+
+  //   // toggle zoom state; after DOM updates we compute scroll position
+  //   setZoomed((prevZoom) => {
+  //     const nextZoom = !prevZoom;
+
+  //     if (nextZoom) {
+  //       // zooming in -> wait for the image to be laid out at its natural size, then scroll
+  //       requestAnimationFrame(() => {
+  //         requestAnimationFrame(() => {
+  //           // natural size to use (from image.naturalWidth/naturalHeight)
+  //           const imgW =
+  //             imageRef.current.naturalWidth || imageRef.current.clientWidth;
+  //           const imgH =
+  //             imageRef.current.naturalHeight || imageRef.current.clientHeight;
+
+  //           // compute desired scroll so clicked point is centered
+  //           const desiredScrollLeft =
+  //             percentX * imgW - container.clientWidth / 2;
+  //           const desiredScrollTop =
+  //             percentY * imgH - container.clientHeight / 2;
+
+  //           // clamp
+  //           const maxScrollLeft = Math.max(
+  //             0,
+  //             container.scrollWidth - container.clientWidth
+  //           );
+  //           const maxScrollTop = Math.max(
+  //             0,
+  //             container.scrollHeight - container.clientHeight
+  //           );
+
+  //           container.scrollLeft = Math.min(
+  //             Math.max(desiredScrollLeft, 0),
+  //             maxScrollLeft
+  //           );
+  //           container.scrollTop = Math.min(
+  //             Math.max(desiredScrollTop, 0),
+  //             maxScrollTop
+  //           );
+  //         });
+  //       });
+  //     } else {
+  //       // zooming out -> reset scroll to center
+  //       requestAnimationFrame(() => {
+  //         container.scrollLeft = 0;
+  //         container.scrollTop = 0;
+  //       });
+  //     }
+
+  //     return nextZoom;
+  //   });
+  // };
+
+  const handleZoomClick = (e) => {
+    if (!containerRef.current || !imageRef.current) return;
     const img = imageRef.current;
     const container = containerRef.current;
+    const rect = img.getBoundingClientRect();
 
-    // image bounding rect BEFORE toggling zoom (this represents FIT state)
-    const imgRect = img.getBoundingClientRect();
+    // was click outside image? close
+    const inside =
+      e.clientX >= rect.left &&
+      e.clientX <= rect.right &&
+      e.clientY >= rect.top &&
+      e.clientY <= rect.bottom;
+    if (!inside) {
+      closeLightbox();
+      return;
+    }
 
-    // click position relative to image
-    const clickX = e.clientX - imgRect.left;
-    const clickY = e.clientY - imgRect.top;
+    // position clicked within the image
+    const clickX = e.clientX - rect.left;
+    const clickY = e.clientY - rect.top;
+    const percentX = clickX / rect.width;
+    const percentY = clickY / rect.height;
 
-    // percent across image
-    const percentX = imgRect.width > 0 ? clickX / imgRect.width : 0.5;
-    const percentY = imgRect.height > 0 ? clickY / imgRect.height : 0.5;
+    setZoomed((prev) => {
+      const next = !prev;
 
-    // toggle zoom state; after DOM updates we compute scroll position
-    setZoomed((prevZoom) => {
-      const nextZoom = !prevZoom;
-
-      if (nextZoom) {
-        // zooming in -> wait for the image to be laid out at its natural size, then scroll
-        requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        if (next) {
+          // after the browser paints zoomed size
           requestAnimationFrame(() => {
-            // natural size to use (from image.naturalWidth/naturalHeight)
-            const imgW =
-              imageRef.current.naturalWidth || imageRef.current.clientWidth;
-            const imgH =
-              imageRef.current.naturalHeight || imageRef.current.clientHeight;
+            const fullW = img.naturalWidth;
+            const fullH = img.naturalHeight;
 
-            // compute desired scroll so clicked point is centered
-            const desiredScrollLeft =
-              percentX * imgW - container.clientWidth / 2;
-            const desiredScrollTop =
-              percentY * imgH - container.clientHeight / 2;
+            // compute scroll so clicked point stays centered
+            const targetLeft = percentX * fullW - container.clientWidth / 2;
+            const targetTop = percentY * fullH - container.clientHeight / 2;
 
-            // clamp
-            const maxScrollLeft = Math.max(
+            container.scrollLeft = Math.max(
               0,
-              container.scrollWidth - container.clientWidth
+              Math.min(targetLeft, fullW - container.clientWidth)
             );
-            const maxScrollTop = Math.max(
+            container.scrollTop = Math.max(
               0,
-              container.scrollHeight - container.clientHeight
-            );
-
-            container.scrollLeft = Math.min(
-              Math.max(desiredScrollLeft, 0),
-              maxScrollLeft
-            );
-            container.scrollTop = Math.min(
-              Math.max(desiredScrollTop, 0),
-              maxScrollTop
+              Math.min(targetTop, fullH - container.clientHeight)
             );
           });
-        });
-      } else {
-        // zooming out -> reset scroll to center
-        requestAnimationFrame(() => {
+        } else {
           container.scrollLeft = 0;
           container.scrollTop = 0;
-        });
-      }
+        }
+      });
 
-      return nextZoom;
+      return next;
     });
   };
 
@@ -162,10 +218,16 @@ export default function PhotoGrid({ photos }) {
         >
           <div className="relative max-w-full max-h-[95vh] w-full">
             {/* Container: center when not zoomed, top-left when zoomed */}
+            {/* container: scrollable only when zoomed */}
             <div
               ref={containerRef}
-              onClick={(e) => e.stopPropagation()}
-              className="relative w-screen h-screen flex items-center justify-center overflow-hidden"
+              className={`relative w-screen h-screen ${
+                zoomed ? "overflow-auto" : "overflow-hidden"
+              } flex items-center justify-center`}
+              onClick={(e) => {
+                // close only if background (not the image) is clicked
+                if (e.target === e.currentTarget) closeLightbox();
+              }}
             >
               <img
                 ref={imageRef}
@@ -173,39 +235,27 @@ export default function PhotoGrid({ photos }) {
                 alt={shuffledPhotos[activeIndex].alt}
                 onLoad={handleImageLoad}
                 onClick={handleZoomClick}
-                className="shadow-xl select-none"
+                className="shadow-xl select-none transition-all duration-300 ease-in-out"
                 style={
                   zoomed
                     ? {
-                        width: naturalSize.w ? `${naturalSize.w}px` : "auto",
-                        height: naturalSize.h ? `${naturalSize.h}px` : "auto",
+                        display: "block",
+                        width: `${naturalSize.w}px`,
+                        height: `${naturalSize.h}px`,
                         maxWidth: "none",
                         maxHeight: "none",
                         cursor: "zoom-out",
                       }
                     : {
-                        width: "100vw", // mobile full width
-                        height: "100vh", // mobile full height
-                        objectFit: "contain", // scale down if needed
-                        cursor: "zoom-in",
+                        display: "block",
+                        width: "100%",
+                        height: "93%",
+                        objectFit: "contain",
+                        cursor: "zoom-out",
                       }
                 }
               />
             </div>
-
-            {/* Nav arrows */}
-            <button
-              onClick={showPrev}
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 px-4 py-2 text-white text-2xl font-bold"
-            >
-              ‹
-            </button>
-            <button
-              onClick={showNext}
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 px-4 py-2 text-white text-2xl font-bold"
-            >
-              ›
-            </button>
 
             {/* Close */}
             <button
