@@ -7,6 +7,7 @@ import MiscelaniousConcerts from "./components/MiscelaniousConcerts";
 import EcomPhotography from "./components/EcomPhotography";
 import PhotographyHomePage from "./components/PhotographyHomePage";
 import ProducedGarments from "./components/ProducedGarments";
+import scmtLogo from "./assets/SCMT_red.svg";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -17,7 +18,7 @@ function App() {
     { id: "ecom-photography", label: "Ecommerce Photography" },
     { id: "photography", label: "Misc. Photography" },
     // { id: "fka-twigs", label: "FKA Twigs" },
-    { id: "misc-concerts", label: "Misc. Concert Photography" },
+    // { id: "misc-concerts", label: "Misc. Concert Photography" },
     { id: "contact", label: "Contact" },
   ];
 
@@ -42,16 +43,32 @@ function App() {
         }`}
       >
         <FullScreenSection id="home">
-          <div class="d-flex justify-content-center align-items-center">
-            <div class="text-center py-[40vh]">
-              <h1 className="text-5xl font-bold mb-4">Sandisz C.M. Thieme</h1>
-              <p class="google-sans-code-mypfolio">Welcome</p>
+          <div className="d-flex justify-content-center align-items-center">
+            <div className="text-center py-[20vh]">
+              {/* SVG logo */}
+              {/* <div className="flex justify-center mb-4">
+                <SCMTLogo className="w-[25px] h-[25px]" />
+              </div> */}
+
+              <div className="flex justify-center mb-4">
+                <img
+                  src={scmtLogo}
+                  alt="SCMT logo"
+                  className="w-[100px] h-[100px] mb-[10vh]"
+                />
+              </div>
+
+              <h1 className="text-5xl font-bold mb-[10vh]">
+                Sandisz C.M. Thieme
+              </h1>
+              <p className="google-sans-code-mypfolio mb-[10vh]">WELCOME</p>
+
               <div className="d-flex flex-col gap-3 py-5">
                 {sections.map((section, idx) => (
                   <button
                     key={section.id}
                     onClick={() => scrollToSection(idx)}
-                    className={`px-2 text-left text-sm hover:underline text-black dark:text-white google-sans-code-mypfolio`}
+                    className="px-2 text-left text-sm hover:underline text-black dark:text-white google-sans-code-mypfolio"
                   >
                     {section.label}
                   </button>
@@ -77,9 +94,9 @@ function App() {
           <FkaTwigsPhotographs />
         </Section> */}
 
-        <Section id="misc-concerts">
+        {/* <Section id="misc-concerts">
           <MiscelaniousConcerts />
-        </Section>
+        </Section> */}
 
         <Section id="contact">
           <h2 className="text-4xl font-semibold mb-2">Contact</h2>
