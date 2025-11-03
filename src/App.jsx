@@ -44,7 +44,7 @@ function App() {
       >
         <FullScreenSection id="home">
           <div className="d-flex justify-content-center align-items-center">
-            <div className="text-center py-[20vh]">
+            <div className="text-center lg:py-[20vh] py-[5vh]">
               {/* SVG logo */}
               {/* <div className="flex justify-center mb-4">
                 <SCMTLogo className="w-[25px] h-[25px]" />
