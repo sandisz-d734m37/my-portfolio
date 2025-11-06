@@ -35,6 +35,38 @@ const garments = [
   },
   {
     garmentPhoto: {
+      src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/OctaneCap/DSC04902.jpg",
+      alt: "Professional Editorial Photograph of Puppet Theater's Octane Cap",
+    },
+    techpackPhotos: [
+      {
+        src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/OctaneCap/octane_cap_p1.jpg",
+        alt: "Octane Cap Technical Pack and Designer's work",
+      },
+      {
+        src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/OctaneCap/octane_cap_p2.jpg",
+        alt: "Octane Cap Technical Pack and Designer's work",
+      },
+      {
+        src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/OctaneCap/octane_cap_ogclwy_p1.jpg",
+        alt: "Octane Cap Technical Pack and Designer's work",
+      },
+      {
+        src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/OctaneCap/octane_cap_ogclwy_p4.jpg",
+        alt: "Octane Cap Technical Pack and Designer's work",
+      },
+      {
+        src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/OctaneCap/octane_cap_ogclwy_p2.jpg",
+        alt: "Octane Cap Technical Pack and Designer's work",
+      },
+      {
+        src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/OctaneCap/octane_cap_ogclwy_p3.jpg",
+        alt: "Octane Cap Technical Pack and Designer's work",
+      },
+    ],
+  },
+  {
+    garmentPhoto: {
       src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/OnModelEcom/multi-act+Lookbook+RE-EDITED/DSC03369.jpg",
       alt: "Professional editorial lookbook fashion photograph Denver based elevated streetwear brand Puppet Theater",
     },
