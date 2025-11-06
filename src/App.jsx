@@ -3,8 +3,9 @@ import LegendNav from "./components/legendNav";
 import Section from "./components/Section";
 import FullScreenSection from "./components/FullScreenSection";
 // import FkaTwigsPhotographs from "./components/FkaTwigsPhotographs";
-import MiscelaniousConcerts from "./components/MiscelaniousConcerts";
+// import MiscelaniousConcerts from "./components/MiscelaniousConcerts";
 import EcomPhotography from "./components/EcomPhotography";
+// import GraphicsPage from "./components/GraphicsPage";
 import PhotographyHomePage from "./components/PhotographyHomePage";
 import ProducedGarments from "./components/ProducedGarments";
 import scmtLogo from "./assets/SCMT_red.svg";
@@ -15,6 +16,7 @@ function App() {
   const sections = [
     { id: "home", label: "Home" },
     { id: "produced-garments", label: "Produced Garments" },
+    // { id: "graphics", label: "Graphics" },
     { id: "ecom-photography", label: "Ecommerce Photography" },
     { id: "photography", label: "Misc. Photography" },
     // { id: "fka-twigs", label: "FKA Twigs" },
@@ -33,10 +35,8 @@ function App() {
 
   return (
     <div className="transition-colors duration-500 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 min-h-screen google-sans-code-mypfolio flex">
-      {/* Pass setter to LegendNav so it can update sidebarOpen */}
       <LegendNav sections={sections} onToggle={setSidebarOpen} />
 
-      {/* Main content container */}
       <div
         className={`transition-all duration-300 flex-1 ${
           sidebarOpen ? "ml-32 sm:ml-52" : "ml-0 sm:ml-20"
@@ -45,11 +45,6 @@ function App() {
         <FullScreenSection id="home">
           <div className="d-flex justify-content-center align-items-center">
             <div className="text-center lg:py-[20vh] py-[5vh]">
-              {/* SVG logo */}
-              {/* <div className="flex justify-center mb-4">
-                <SCMTLogo className="w-[25px] h-[25px]" />
-              </div> */}
-
               <div className="flex justify-center mb-4">
                 <img
                   src={scmtLogo}
@@ -58,7 +53,7 @@ function App() {
                 />
               </div>
 
-              <h1 className="text-5xl font-bold mb-[10vh]">
+              <h1 className="lg:text-5xl text-2xl font-bold mb-[10vh]">
                 Sandisz C.M. Thieme
               </h1>
               <p className="google-sans-code-mypfolio mb-[10vh]">WELCOME</p>
@@ -81,6 +76,10 @@ function App() {
         <Section id="produced-garments">
           <ProducedGarments />
         </Section>
+
+        {/* <Section id="graphics">
+          <GraphicsPage />
+        </Section> */}
 
         <Section id="ecom-photography">
           <EcomPhotography />

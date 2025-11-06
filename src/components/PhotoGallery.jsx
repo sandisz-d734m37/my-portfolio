@@ -132,17 +132,21 @@ export default function PhotoGallery({ photos }) {
       {/* lightbox */}
       {activeIndex !== null && (
         <div
-          className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 bg-white bg-opacity-90 flex items-center justify-center p-4"
           onClick={closeLightbox}
         >
-          <div className="relative max-w-full max-h-[95vh] w-full">
+          <div className="relative max-w-full max-h-[100vh] w-full">
             <div
               ref={containerRef}
-              onClick={(e) => e.stopPropagation()}
+              // onClick={(e) => e.stopPropagation()}
               className={`relative overflow-auto ${
                 zoomed ? "" : "flex items-center justify-center"
               }`}
               style={{ maxHeight: "95vh" }}
+              onClick={(e) => {
+                // close only if background (not the image) is clicked
+                if (e.target === e.currentTarget) closeLightbox();
+              }}
             >
               <img
                 ref={imageRef}
