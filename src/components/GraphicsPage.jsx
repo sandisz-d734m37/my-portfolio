@@ -1,5 +1,3 @@
-import PhotoGrid from "./PhotoGrid";
-
 const photos = [
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/Theater.svg",
