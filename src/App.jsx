@@ -5,7 +5,7 @@ import FullScreenSection from "./components/FullScreenSection";
 // import FkaTwigsPhotographs from "./components/FkaTwigsPhotographs";
 // import MiscelaniousConcerts from "./components/MiscelaniousConcerts";
 import EcomPhotography from "./components/EcomPhotography";
-// import GraphicsPage from "./components/GraphicsPage";
+import GraphicsPage from "./components/GraphicsPage";
 import PhotographyHomePage from "./components/PhotographyHomePage";
 import ProducedGarments from "./components/ProducedGarments";
 import scmtLogo from "./assets/SCMT_red.svg";
@@ -16,7 +16,7 @@ function App() {
   const sections = [
     { id: "home", label: "Home" },
     { id: "produced-garments", label: "Produced Garments" },
-    // { id: "graphics", label: "Graphics" },
+    { id: "graphics", label: "Graphics" },
     { id: "ecom-photography", label: "Ecommerce Photography" },
     { id: "photography", label: "Misc. Photography" },
     // { id: "fka-twigs", label: "FKA Twigs" },
@@ -77,9 +77,9 @@ function App() {
           <ProducedGarments />
         </Section>
 
-        {/* <Section id="graphics">
+        <Section id="graphics">
           <GraphicsPage />
-        </Section> */}
+        </Section>
 
         <Section id="ecom-photography">
           <EcomPhotography />
