@@ -39,13 +39,13 @@ const photos = [
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/Chotic.svg",
     alt: "Puppet Theater Chotic graphic SVG",
   },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/Fantasy.svg",
-    alt: "Test Cursive Fantasy graphic SVG",
-  },
+  // {
+  //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/Fantasy.svg",
+  //   alt: "Test Cursive Fantasy graphic SVG",
+  // },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/TheaterLady.svg",
-    alt: "Test Cursive Fantasy graphic SVG",
+    alt: "Test Cursive Theater plus music and Itilian woman graphic SVG",
   },
 ];
 
