@@ -47,6 +47,14 @@ const photos = [
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/StopFightingptch.svg",
     alt: "Test patch-like graphic stop fighting supporting peace peace is easy graphic SVG",
   },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/TOTAL_CONTROL_g.svg",
+    alt: "Test tech or security company graphic offering TOTAL CONTROL in elegent Green SVG",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/TOTAL_CONTROL_r_alt.svg",
+    alt: "Test elevated tech or security company, or luxury brand graphic, offering TOTAL CONTROL in secure Red SVG",
+  },
 ];
 
 export default function PhotographyHomePage() {
