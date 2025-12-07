@@ -55,6 +55,22 @@ const photos = [
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/TOTAL_CONTROL_r_alt.svg",
     alt: "Test elevated tech or security company, or luxury brand graphic, offering TOTAL CONTROL in secure Red SVG",
   },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/LIVEFREE.svg",
+    alt: "Sparkly covered or obscured punk style graphic that reads live free and die trying SVG",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/Lern2Fly.svg",
+    alt: "Graphic ribbon that reads Fall in Love and Learn to Fly SVG",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/d734m.svg",
+    alt: "Graphic or Logo reading D734M37 with star and sparkle overtop SVG",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/pngs/kumri_graphic.png",
+    alt: "Graphic featuring Kumri Akhmedova, Hero of Socialist Labor",
+  },
 ];
 
 export default function PhotographyHomePage() {
