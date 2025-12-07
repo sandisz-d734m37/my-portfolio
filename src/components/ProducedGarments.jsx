@@ -67,6 +67,30 @@ const garments = [
   },
   {
     garmentPhoto: {
+      src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/DBLSWEAT/Model-DblSwt.jpg",
+      alt: "Professional On Model Ecom Photograph for Denver based elevated streetwear brand Puppet Theater",
+    },
+    techpackPhotos: [
+      {
+        src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/DBLSWEAT/DblSweatPg1.jpg",
+        alt: "Professional Technical drawing and tech pack for a unique double-waistband sweatpant",
+      },
+      {
+        src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/DBLSWEAT/DblSweatPg2.jpg",
+        alt: "Professional Technical drawing and tech pack for a unique double-waistband sweatpant",
+      },
+      {
+        src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/DBLSWEAT/DblSweatPg3.jpg",
+        alt: "Professional Technical drawing and tech pack for a unique double-waistband sweatpant",
+      },
+      {
+        src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/DBLSWEAT/DblSweatPg4.jpg",
+        alt: "Professional Technical drawing and tech pack for a unique double-waistband sweatpant",
+      },
+    ],
+  },
+  {
+    garmentPhoto: {
       src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/OnModelEcom/multi-act+Lookbook+RE-EDITED/DSC03369.jpg",
       alt: "Professional editorial lookbook fashion photograph Denver based elevated streetwear brand Puppet Theater",
     },
