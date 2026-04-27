@@ -31,7 +31,7 @@ export default function PhotoGrid({ photos }) {
 
   const showPrev = () => {
     setActiveIndex(
-      (prev) => (prev - 1 + shuffledPhotos.length) % shuffledPhotos.length
+      (prev) => (prev - 1 + shuffledPhotos.length) % shuffledPhotos.length,
     );
     resetZoom();
   };
@@ -91,20 +91,20 @@ export default function PhotoGrid({ photos }) {
 
             const maxScrollLeft = Math.max(
               0,
-              container.scrollWidth - container.clientWidth
+              container.scrollWidth - container.clientWidth,
             );
             const maxScrollTop = Math.max(
               0,
-              container.scrollHeight - container.clientHeight
+              container.scrollHeight - container.clientHeight,
             );
 
             container.scrollLeft = Math.min(
               Math.max(desiredScrollLeft, 0),
-              maxScrollLeft
+              maxScrollLeft,
             );
             container.scrollTop = Math.min(
               Math.max(desiredScrollTop, 0),
-              maxScrollTop
+              maxScrollTop,
             );
           });
         });
@@ -122,8 +122,8 @@ export default function PhotoGrid({ photos }) {
   return (
     <>
       {/* Grid */}
-      {/* <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4"> */}
-      <div className="grid grid-cols-2 gap-2 lg:gap-4">
+      <div className="columns-1 sm:columns-2 md:columns-7 gap-1 space-y-1">
+        {/* <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-2 lg:gap-4"> */}
         {shuffledPhotos.map((photo, index) => (
           <img
             key={index}
@@ -134,7 +134,7 @@ export default function PhotoGrid({ photos }) {
               setActiveIndex(index);
               setZoomed(false);
             }}
-            className="w-full h-auto shadow-md cursor-zoom-in hover:opacity-80 transition-opacity"
+            className="w-full h-auto cursor-zoom-in hover:opacity-80 transition-opacity"
           />
         ))}
       </div>

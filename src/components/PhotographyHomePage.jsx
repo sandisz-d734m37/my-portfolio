@@ -123,7 +123,56 @@ const photos = [
   },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Holly/6.jpg",
-    alt: "Professional Pet Photography of a Pomky Eskimo puppy wearing ComplexCon exclusive dog clothing from Clot",
+    alt: "Professional Pet Photography of a Pomsky Eskimo puppy wearing ComplexCon exclusive dog clothing from Clot",
+  },
+
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jennifer/1.jpg",
+    alt: "Professional Photography of SaintJenni in Puppet Theater",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jennifer/2.jpg",
+    alt: "Professional Photography of SaintJenni in Puppet Theater",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jennifer/3.jpg",
+    alt: "Professional Photography of SaintJenni in Puppet Theater",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jennifer/4.jpg",
+    alt: "Professional Photography of SaintJenni in Puppet Theater",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jennifer/5.jpg",
+    alt: "Professional Photography of SaintJenni in Puppet Theater",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jennifer/7.jpg",
+    alt: "Professional Photography of SaintJenni in Puppet Theater",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jennifer/8.jpg",
+    alt: "Professional Photography of SaintJenni in Puppet Theater",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jennifer/11.jpg",
+    alt: "Professional Photography of SaintJenni in Puppet Theater",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jennifer/13.jpg",
+    alt: "Professional Photography of SaintJenni in Puppet Theater",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jennifer/15.jpg",
+    alt: "Professional Photography of SaintJenni in Puppet Theater",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jennifer/17.jpg",
+    alt: "Professional Photography of SaintJenni in Puppet Theater",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jennifer/18.jpg",
+    alt: "Professional Photography of SaintJenni in Puppet Theater",
   },
 ];
 
