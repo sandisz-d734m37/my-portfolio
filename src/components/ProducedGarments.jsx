@@ -192,14 +192,24 @@ export default function ProducedGarments() {
   return (
     <div class="px-5">
       <h2 className="text-4xl font-semibold mb-6">Produced Garments</h2>
-
-      {garments.map((garment, i) => (
-        <GarmentTechpack
-          key={i}
-          garmentPhoto={garment.garmentPhoto}
-          techpackPhotos={garment.techpackPhotos}
+      <div className="w-full flex justify-center pb-6">
+        <img
+          src="https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/puppet_theater/IMG_9701.jpeg"
+          alt="garmentPhoto.alt"
+          className="object-contain max-h-[80vh] border border-black dark:border-white rounded-2xl"
         />
-      ))}
+        <br />
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        {garments.map((garment, i) => (
+          <GarmentTechpack
+            key={i}
+            garmentPhoto={garment.garmentPhoto}
+            techpackPhotos={garment.techpackPhotos}
+          />
+        ))}
+      </div>
     </div>
   );
 }
