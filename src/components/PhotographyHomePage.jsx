@@ -34,10 +34,6 @@ const photos = [
     alt: "Octane Cap - editorial streetwear photography for denver based fashion brand puppet theater",
   },
   {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/MiscPhotography/October+21+2025/DSC04950.jpg",
-    alt: "Octane Cap - editorial streetwear photography for denver based fashion brand puppet theater",
-  },
-  {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/MiscPhotography/October+21+2025/DSC07504.jpg",
     alt: "Knit Editorial - professional minimal fashion photograph",
   },
@@ -58,16 +54,8 @@ const photos = [
     alt: "Jennifer - Professional photograph of my beautiful girlfriend wearing denver based brand Puppet Theater",
   },
   {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/MiscPhotography/October+21+2025/DSC08662.jpg",
-    alt: "Jennifer - Professional photograph of my beautiful girlfriend wearing denver based brand Puppet Theater",
-  },
-  {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/MiscPhotography/October+21+2025/DSC08819.jpg",
     alt: "Jennifer - Professional photograph of my beautiful girlfriend wearing denver based brand Puppet Theater",
-  },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/MiscPhotography/October+21+2025/DSC08953.jpg",
-    alt: "Knit Editorial - Editorial photograph in a soccer field for Denver based elevated streetwear brand Puppet Theater",
   },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/MiscPhotography/October+21+2025/DSC09037.jpg",
@@ -77,22 +65,14 @@ const photos = [
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/MiscPhotography/October+21+2025/DSC09096.jpg",
     alt: "Knit Editorial - Editorial photograph in a soccer field for Denver based elevated streetwear brand Puppet Theater",
   },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/FKA_TWIGS/DSCF7599-2.jpg",
-    alt: "professional photograph of FKA Twigs back up dancers at the Mission Ballroom in Denver, Colorado",
-  },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/BrockHampton/BHMPTN+-+dark+merlin.jpg",
-    alt: "Dramatic Photograph of BROCKHAMPTON frontman Merlyn Wood, performing at Denver's Globe Hall, their first concert on tour",
-  },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/FKA_TWIGS/DSCF7556.jpg",
-    alt: "professional digital black and white exciting photograph of FKA Twigs dancing with lots of movement fog and lights",
-  },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Dir+En+Grey/dir-en-grey-fman-close-alt.jpg",
-    alt: "Close Up cinematic concert Photograph of Japanese Heavy Metal band Dir En Grey frontman with dramatic backgrop of drummer cymbals behind him",
-  },
+  // {
+  //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/FKA_TWIGS/DSCF7599-2.jpg",
+  //   alt: "professional photograph of FKA Twigs back up dancers at the Mission Ballroom in Denver, Colorado",
+  // },
+  // {
+  //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/BrockHampton/BHMPTN+-+dark+merlin.jpg",
+  //   alt: "Dramatic Photograph of BROCKHAMPTON frontman Merlyn Wood, performing at Denver's Globe Hall, their first concert on tour",
+  // },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/FKA_TWIGS/DSCF7683.jpg",
     alt: "Dreamy photograph of FKA Twigs performing during her Magdalene tour at the Mission Ballroom in Denver, Colorado",
@@ -139,23 +119,7 @@ const photos = [
     alt: "Professional Photography of SaintJenni in Puppet Theater",
   },
   {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jennifer/4.jpg",
-    alt: "Professional Photography of SaintJenni in Puppet Theater",
-  },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jennifer/5.jpg",
-    alt: "Professional Photography of SaintJenni in Puppet Theater",
-  },
-  {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jennifer/7.jpg",
-    alt: "Professional Photography of SaintJenni in Puppet Theater",
-  },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jennifer/8.jpg",
-    alt: "Professional Photography of SaintJenni in Puppet Theater",
-  },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jennifer/11.jpg",
     alt: "Professional Photography of SaintJenni in Puppet Theater",
   },
   {
@@ -173,6 +137,58 @@ const photos = [
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jennifer/18.jpg",
     alt: "Professional Photography of SaintJenni in Puppet Theater",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Goldy_Ppt_A3/1.jpg",
+    alt: "Professional Photography of our friend Goldy in Puppet Theater Act III: Custodian",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Goldy_Ppt_A3/2.jpg",
+    alt: "Professional Photography of our friend Goldy in Puppet Theater Act III: Custodian",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Goldy_Ppt_A3/3.jpg",
+    alt: "Professional Photography of our friend Goldy in Puppet Theater Act III: Custodian",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Goldy_Ppt_A3/4.jpg",
+    alt: "Professional Photography of our friend Goldy in Puppet Theater Act III: Custodian",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Goldy_Ppt_A3/5.jpg",
+    alt: "Professional Photography of our friend Goldy in Puppet Theater Act III: Custodian",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Goldy_Ppt_A3/6.jpg",
+    alt: "Professional Photography of our friend Goldy in Puppet Theater Act III: Custodian",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Goldy_Ppt_A3/7.jpg",
+    alt: "Professional Photography of our friend Goldy in Puppet Theater Act III: Custodian",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Goldy_Ppt_A3/8.jpg",
+    alt: "Professional Photography of our friend Goldy in Puppet Theater Act III: Custodian",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Goldy_Ppt_A3/9.jpg",
+    alt: "Professional Photography of our friend Goldy in Puppet Theater Act III: Custodian",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Goldy_Ppt_A3/10.jpg",
+    alt: "Professional Photography of our friend Goldy in Puppet Theater Act III: Custodian",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Goldy_Ppt_A3/11.jpg",
+    alt: "Professional Photography of our friend Goldy in Puppet Theater Act III: Custodian",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Goldy_Ppt_A3/12.jpg",
+    alt: "Professional Photography of our friend Goldy in Puppet Theater Act III: Custodian",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Goldy_Ppt_A3/13.jpg",
+    alt: "Professional Photography of our friend Goldy in Puppet Theater Act III: Custodian",
   },
 ];
 

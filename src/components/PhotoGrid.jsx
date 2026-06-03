@@ -122,7 +122,7 @@ export default function PhotoGrid({ photos }) {
   return (
     <>
       {/* Grid */}
-      <div className="columns-1 sm:columns-2 md:columns-7 gap-1 space-y-1">
+      <div className="columns-1 sm:columns-2 md:columns-5 gap-1 space-y-1">
         {/* <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-2 lg:gap-4"> */}
         {shuffledPhotos.map((photo, index) => (
           <img
