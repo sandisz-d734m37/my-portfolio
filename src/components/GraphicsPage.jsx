@@ -20,10 +20,6 @@ const photos = [
     alt: "Suspension of Disbelief Sticker Made SVG",
   },
   {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/pngs/SPRPTNT.png",
-    alt: "Cursive Spraypaint Treated Puppet Theater logo used on tags and bags PNG",
-  },
-  {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/Souuund.svg",
     alt: "Soooound graphic used on Octane Cap",
   },
@@ -124,6 +120,50 @@ const photos = [
     alt: "Personal Fucker, in my signature cracked up style SVG",
   },
   {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/winner.svg",
+    alt: "Personal winner patch graphic SVG",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/freedom.svg",
+    alt: "Personal freedom patch graphic SVG",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/wannabe.svg",
+    alt: "sometimes i'm gonna have to lose SVG",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/AHoles.svg",
+    alt: "I knew it I'm surrounded by Assholes... Keep firing assholes!",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/bebrave.svg",
+    alt: "BE BRAVE svg",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/big_high_wall.svg",
+    alt: "Woody Guthry lyric from This Land Was Made For You And Me, symbolizing what that song is really about",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/Haiti.svg",
+    alt: "American Flag with SCMT Have No Fear staple graphic and outiline of Haiti in the flag",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/calltoday.svg",
+    alt: "Don't be an asshole CALL TODAY",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/Sandiszworld.svg",
+    alt: "The flag of Sandiszworld featuring the SCMT star logo",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/diefighting.svg",
+    alt: "You either die fighting! Or you die crying! It's your choice!",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/havetolose.svg",
+    alt: "patch that reads I wanna be surrounded by assholes in american flag SVG",
+  },
+  {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/pngs/kumri_graphic.png",
     alt: "Graphic featuring Kumri Akhmedova, Hero of Socialist Labor",
   },
@@ -131,17 +171,17 @@ const photos = [
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/pngs/i_love_radio.png",
     alt: "Jacket concept featuring Puppet Theater signature cursive logo and I Love The Radio patches",
   },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/pngs/give_me_back.png",
-    alt: "Graphic concept featuring a gun and phrase give me back my bullets in my signature cracked up style, inspired by vintage Entombed tee",
-  },
+  // {
+  //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/pngs/give_me_back.png",
+  //   alt: "Graphic concept featuring a gun and phrase give me back my bullets in my signature cracked up style, inspired by vintage Entombed tee",
+  // },
 ];
 
 export default function PhotographyHomePage() {
   return (
     <div>
       <h2 className="text-4xl font-semibold mb-6">Graphics</h2>
-      <div class="columns-2 gap-4 space-y-4">
+      <div class="columns-2 gap-2 space-y-2">
         {[...photos]
           .sort(() => Math.random() - 0.5)
           .map((photo, index) => (
