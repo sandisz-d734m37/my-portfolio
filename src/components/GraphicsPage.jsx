@@ -185,7 +185,7 @@ export default function PhotographyHomePage() {
   return (
     <div>
       <h2 className="text-4xl font-semibold mb-6">Graphics</h2>
-      <div class="columns-2 gap-2 space-y-2">
+      <div class="lg:columns-2 lg:gap-2 lg:space-y-2">
         {[...photos]
           .sort(() => Math.random() - 0.5)
           .map((photo, index) => (
