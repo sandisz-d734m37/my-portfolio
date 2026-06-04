@@ -171,6 +171,10 @@ const photos = [
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/pngs/i_love_radio.png",
     alt: "Jacket concept featuring Puppet Theater signature cursive logo and I Love The Radio patches",
   },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/pngs/canttakeit.png",
+    alt: "T Shirt concept featuring American Flag, a true statement, and some children laughing at the ones who don't think the statement is true",
+  },
   // {
   //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/pngs/give_me_back.png",
   //   alt: "Graphic concept featuring a gun and phrase give me back my bullets in my signature cracked up style, inspired by vintage Entombed tee",
