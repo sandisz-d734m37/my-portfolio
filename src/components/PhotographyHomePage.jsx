@@ -190,6 +190,22 @@ const photos = [
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Goldy_Ppt_A3/13.jpg",
     alt: "Professional Photography of our friend Goldy in Puppet Theater Act III: Custodian",
   },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jarrod_Ppt_A3/1.jpg",
+    alt: "Professional Photography of our friend Jarrod in Puppet Theater Act III: Custodian",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jarrod_Ppt_A3/2.jpg",
+    alt: "Professional Photography of our friend Jarrod in Puppet Theater Act III: Custodian",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jarrod_Ppt_A3/3.jpg",
+    alt: "Professional Photography of our friend Jarrod in Puppet Theater Act III: Custodian",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jarrod_Ppt_A3/4.jpg",
+    alt: "Professional Photography of our friend Jarrod in Puppet Theater Act III: Custodian",
+  },
 ];
 
 export default function PhotographyHomePage() {

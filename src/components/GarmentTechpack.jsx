@@ -28,17 +28,25 @@ export default function GarmentTechpack({ garmentPhoto, techpackPhotos }) {
 
       {/* Modal */}
       {open && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80">
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80"
+          onClick={() => setOpen(false)}
+        >
           {/* Close button */}
           <button
-            onClick={() => setOpen(false)}
+            onClick={(e) => {
+              e.stopPropagation();
+              setOpen(false);
+            }}
             className="absolute top-4 right-4 text-white text-2xl"
           >
             ✕
           </button>
-
           {/* Flipbook container */}
-          <div className="w-full mx-10 flex justify-center">
+          <div
+            className="w-full mx-10 flex justify-center"
+            onClick={(e) => e.stopPropagation()}
+          >
             <HTMLFlipBook
               width={isMobile ? 300 : 1900}
               height={isMobile ? 400 : 1400}
