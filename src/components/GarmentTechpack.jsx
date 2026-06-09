@@ -15,13 +15,13 @@ export default function GarmentTechpack({ garmentPhoto, techpackPhotos }) {
   return (
     <>
       {/* Garment Image (clickable) */}
-      <div className="flex justify-center mb-16 w-full">
-        <div className="w-full flex justify-center">
+      <div className="flex justify-center mb-4 w-full">
+        <div className="w-full h-[80vh] rounded-2xl overflow-hidden border border-black dark:border-white">
           <img
             src={garmentPhoto.src}
             alt={garmentPhoto.alt}
             onClick={() => setOpen(true)}
-            className="cursor-pointer object-contain max-h-[80vh] border border-black dark:border-white rounded-2xl"
+            className="cursor-pointer w-full h-full object-cover"
           />
         </div>
       </div>
@@ -64,7 +64,7 @@ export default function GarmentTechpack({ garmentPhoto, techpackPhotos }) {
               {techpackPhotos.map((photo, i) => (
                 <div
                   key={i}
-                  className="border border-black rounded-2xl bg-white dark:bg-neutral-800 flex items-center justify-center"
+                  className="border border-black rounded-2xl overflow-hidden bg-white dark:bg-neutral-800 flex items-center justify-center"
                 >
                   <img
                     src={photo.src}
