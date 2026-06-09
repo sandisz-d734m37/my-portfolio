@@ -45,14 +45,14 @@ const photos = [
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/MiscPhotography/October+21+2025/DSC08468.jpg",
     alt: "Jennifer - Professional photograph of my beautiful girlfriend wearing denver based brand Saint Destiny",
   },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/MiscPhotography/October+21+2025/DSC08519.jpg",
-    alt: "Jennifer - Professional photograph of my beautiful girlfriend wearing denver based brand Saint Destiny",
-  },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/MiscPhotography/October+21+2025/DSC08550.jpg",
-    alt: "Jennifer - Professional photograph of my beautiful girlfriend wearing denver based brand Puppet Theater",
-  },
+  // {
+  //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/MiscPhotography/October+21+2025/DSC08519.jpg",
+  //   alt: "Jennifer - Professional photograph of my beautiful girlfriend wearing denver based brand Saint Destiny",
+  // },
+  // {
+  //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/MiscPhotography/October+21+2025/DSC08550.jpg",
+  //   alt: "Jennifer - Professional photograph of my beautiful girlfriend wearing denver based brand Puppet Theater",
+  // },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/MiscPhotography/October+21+2025/DSC08819.jpg",
     alt: "Jennifer - Professional photograph of my beautiful girlfriend wearing denver based brand Puppet Theater",
@@ -61,10 +61,10 @@ const photos = [
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/MiscPhotography/October+21+2025/DSC09037.jpg",
     alt: "Knit Editorial - Editorial photograph in a soccer field for Denver based elevated streetwear brand Puppet Theater",
   },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/MiscPhotography/October+21+2025/DSC09096.jpg",
-    alt: "Knit Editorial - Editorial photograph in a soccer field for Denver based elevated streetwear brand Puppet Theater",
-  },
+  // {
+  //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/MiscPhotography/October+21+2025/DSC09096.jpg",
+  //   alt: "Knit Editorial - Editorial photograph in a soccer field for Denver based elevated streetwear brand Puppet Theater",
+  // },
   // {
   //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/FKA_TWIGS/DSCF7599-2.jpg",
   //   alt: "professional photograph of FKA Twigs back up dancers at the Mission Ballroom in Denver, Colorado",
@@ -154,10 +154,10 @@ const photos = [
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Goldy_Ppt_A3/4.jpg",
     alt: "Professional Photography of our friend Goldy in Puppet Theater Act III: Custodian",
   },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Goldy_Ppt_A3/5.jpg",
-    alt: "Professional Photography of our friend Goldy in Puppet Theater Act III: Custodian",
-  },
+  // {
+  //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Goldy_Ppt_A3/5.jpg",
+  //   alt: "Professional Photography of our friend Goldy in Puppet Theater Act III: Custodian",
+  // },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Goldy_Ppt_A3/6.jpg",
     alt: "Professional Photography of our friend Goldy in Puppet Theater Act III: Custodian",
@@ -190,10 +190,10 @@ const photos = [
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Goldy_Ppt_A3/13.jpg",
     alt: "Professional Photography of our friend Goldy in Puppet Theater Act III: Custodian",
   },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jarrod_Ppt_A3/1.jpg",
-    alt: "Professional Photography of our friend Jarrod in Puppet Theater Act III: Custodian",
-  },
+  // {
+  //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jarrod_Ppt_A3/1.jpg",
+  //   alt: "Professional Photography of our friend Jarrod in Puppet Theater Act III: Custodian",
+  // },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jarrod_Ppt_A3/2.jpg",
     alt: "Professional Photography of our friend Jarrod in Puppet Theater Act III: Custodian",
@@ -202,10 +202,62 @@ const photos = [
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jarrod_Ppt_A3/3.jpg",
     alt: "Professional Photography of our friend Jarrod in Puppet Theater Act III: Custodian",
   },
+  // {
+  //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jarrod_Ppt_A3/4.jpg",
+  //   alt: "Professional Photography of our friend Jarrod in Puppet Theater Act III: Custodian",
+  // },
   {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/Jarrod_Ppt_A3/4.jpg",
-    alt: "Professional Photography of our friend Jarrod in Puppet Theater Act III: Custodian",
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/ppt_actIV_First_Date/1.jpg",
+    alt: "Professional Photography of our friends Max and Temma in Puppet Theater Act IV: L'Amour est Bleu, this is the first lookbook for Act IV",
   },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/ppt_actIV_First_Date/2.jpg",
+    alt: "Professional Photography of our friends Max and Temma in Puppet Theater Act IV: L'Amour est Bleu, this is the first lookbook for Act IV",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/ppt_actIV_First_Date/3.jpg",
+    alt: "Professional Photography of our friends Max and Temma in Puppet Theater Act IV: L'Amour est Bleu, this is the first lookbook for Act IV",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/ppt_actIV_First_Date/4.jpg",
+    alt: "Professional Photography of our friends Max and Temma in Puppet Theater Act IV: L'Amour est Bleu, this is the first lookbook for Act IV",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/ppt_actIV_First_Date/5.jpg",
+    alt: "Professional Photography of our friends Max and Temma in Puppet Theater Act IV: L'Amour est Bleu, this is the first lookbook for Act IV",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/ppt_actIV_First_Date/6.jpg",
+    alt: "Professional Photography of our friends Max and Temma in Puppet Theater Act IV: L'Amour est Bleu, this is the first lookbook for Act IV",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/ppt_actIV_First_Date/7.jpg",
+    alt: "Professional Photography of our friends Max and Temma in Puppet Theater Act IV: L'Amour est Bleu, this is the first lookbook for Act IV",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/ppt_actIV_First_Date/8.jpg",
+    alt: "Professional Photography of our friends Max and Temma in Puppet Theater Act IV: L'Amour est Bleu, this is the first lookbook for Act IV",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/ppt_actIV_First_Date/9.jpg",
+    alt: "Professional Photography of our friends Max and Temma in Puppet Theater Act IV: L'Amour est Bleu, this is the first lookbook for Act IV",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/ppt_actIV_First_Date/10.jpg",
+    alt: "Professional Photography of our friends Max and Temma in Puppet Theater Act IV: L'Amour est Bleu, this is the first lookbook for Act IV",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/ppt_actIV_First_Date/11.jpg",
+    alt: "Professional Photography of our friends Max and Temma in Puppet Theater Act IV: L'Amour est Bleu, this is the first lookbook for Act IV",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/ppt_actIV_First_Date/12.jpg",
+    alt: "Professional Photography of our friends Max and Temma in Puppet Theater Act IV: L'Amour est Bleu, this is the first lookbook for Act IV",
+  },
+  // {
+  //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/ppt_actIV_First_Date/13.jpg",
+  //   alt: "Professional Photography of Puppet Theater's Patric wearing Act IV: L'Amour est Bleu, this was a test shoot for the Act IV lookbook",
+  // },
 ];
 
 export default function PhotographyHomePage() {

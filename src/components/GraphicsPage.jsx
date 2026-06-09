@@ -164,6 +164,10 @@ const photos = [
     alt: "patch that reads I wanna be surrounded by assholes in american flag SVG",
   },
   {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/LAmourEstBleu.svg",
+    alt: "Puppet Theater Act IV L'Amour est Bleu main cursive graphic",
+  },
+  {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/pngs/kumri_graphic.png",
     alt: "Graphic featuring Kumri Akhmedova, Hero of Socialist Labor",
   },
