@@ -129,7 +129,7 @@ const photos = [
   },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/wannabe.svg",
-    alt: "sometimes i'm gonna have to lose SVG",
+    alt: "patch that reads I wanna be surrounded by assholes in american flag SVG",
   },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/AHoles.svg",
@@ -143,14 +143,14 @@ const photos = [
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/big_high_wall.svg",
     alt: "Woody Guthry lyric from This Land Was Made For You And Me, symbolizing what that song is really about",
   },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/Haiti.svg",
-    alt: "American Flag with SCMT Have No Fear staple graphic and outiline of Haiti in the flag",
-  },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/calltoday.svg",
-    alt: "Don't be an asshole CALL TODAY",
-  },
+  // {
+  //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/Haiti.svg",
+  //   alt: "American Flag with SCMT Have No Fear staple graphic and outiline of Haiti in the flag",
+  // },
+  // {
+  //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/calltoday.svg",
+  //   alt: "Don't be an asshole CALL TODAY",
+  // },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/Sandiszworld.svg",
     alt: "The flag of Sandiszworld featuring the SCMT star logo",
@@ -161,7 +161,7 @@ const photos = [
   },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/havetolose.svg",
-    alt: "patch that reads I wanna be surrounded by assholes in american flag SVG",
+    alt: "sometimes i'm gonna have to lose SVG",
   },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/LAmourEstBleu.svg",
