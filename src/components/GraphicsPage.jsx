@@ -127,14 +127,14 @@ const photos = [
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/freedom.svg",
     alt: "Personal freedom patch graphic SVG",
   },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/wannabe.svg",
-    alt: "patch that reads I wanna be surrounded by assholes in american flag SVG",
-  },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/AHoles.svg",
-    alt: "I knew it I'm surrounded by Assholes... Keep firing assholes!",
-  },
+  // {
+  //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/wannabe.svg",
+  //   alt: "patch that reads I wanna be surrounded by assholes in american flag SVG",
+  // },
+  // {
+  //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/AHoles.svg",
+  //   alt: "I knew it I'm surrounded by Assholes... Keep firing assholes!",
+  // },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/bebrave.svg",
     alt: "BE BRAVE svg",
