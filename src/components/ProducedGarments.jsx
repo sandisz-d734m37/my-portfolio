@@ -188,6 +188,41 @@ const garments = [
   // add more garments here...
 ];
 
+const alt_garments = [
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/KumriOriginal/KumriOriginalFlatlay.png",
+    alt: "iPhone Photo of Kumri Akhmedova Tribute Sweater I designed laying flat",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/Everything+Tee/EverythingTeeFlatlay.png",
+    alt: "iPhone Photo of Everything Tee I designed laying flat",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/FinallyCrewneck/FinallyCrewneckFlatlay.png",
+    alt: "iPhone Photo of front of Finally Crewneck, featuring cursive script graphic I designed, laying flat",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/Panel+Flannel/PanelFlannelFlatlay.png",
+    alt: "iPhone Photo of Panel Flannel I designed laying flat",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/Nothing+Lasts+Tee/NothingLastsFlatlayFRONT.png",
+    alt: "iPhone Photo of front of Nothing Lasts Tee I designed laying flat",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/Nothing+Lasts+Tee/NothingLastsFlatlay.png",
+    alt: "iPhone Photo of back of Nothing Lasts Tee I designed laying flat",
+  },
+  // {
+  //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/Harrington/HarringtonFlatlay.png",
+  //   alt: "iPhone Photo of Harrington, featuring multiple staple graphics I designed for Puppet Theater, laying flat",
+  // },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/Patch+Thermal/PatchThermalFlatlay.png",
+    alt: "iPhone Photo of Patch Thermal, featuring 18 unique graphics I designed laying flat",
+  },
+];
+
 export default function ProducedGarments() {
   return (
     <div class="px-5">
@@ -199,6 +234,22 @@ export default function ProducedGarments() {
           className="object-contain max-h-[80vh] border border-black dark:border-white rounded-2xl"
         />
         <br />
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-16 mb-16">
+        {alt_garments.map((garment, i) => (
+          <img
+            key={i}
+            src={garment.src}
+            alt={garment.alt}
+            loading="lazy"
+            // onClick={() => {
+            //   setActiveIndex(index);
+            //   setZoomed(false);
+            // }}
+            className="w-full h-auto hover:opacity-70 transition-opacity"
+          />
+        ))}
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
