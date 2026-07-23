@@ -143,6 +143,14 @@ const photos = [
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/big_high_wall.svg",
     alt: "Woody Guthry lyric from This Land Was Made For You And Me, symbolizing what that song is really about",
   },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/vacation_vocation_1.svg",
+    alt: "Pot leaf with vocation phrase for vacation style merchandise",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/life_is_short.svg",
+    alt: "Life is short, go to Malibu (this one is true)",
+  },
   // {
   //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/Haiti.svg",
   //   alt: "American Flag with SCMT Have No Fear staple graphic and outiline of Haiti in the flag",
