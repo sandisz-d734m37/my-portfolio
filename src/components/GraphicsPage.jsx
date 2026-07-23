@@ -148,7 +148,7 @@ const photos = [
     alt: "Pot leaf with vocation phrase for vacation style merchandise",
   },
   {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/life_is_short.svg",
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/life_is_short_1.svg",
     alt: "Life is short, go to Malibu (this one is true)",
   },
   // {
