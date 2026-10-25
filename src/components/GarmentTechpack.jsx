@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import HTMLFlipBook from "react-pageflip";
+import LoadingImage from "./LoadingImage";
 
 export default function GarmentTechpack({ garmentPhoto, techpackPhotos }) {
   const [isMobile, setIsMobile] = useState(false);
@@ -17,10 +18,13 @@ export default function GarmentTechpack({ garmentPhoto, techpackPhotos }) {
       {/* Garment Image (clickable) */}
       <div className="flex justify-center mb-4 w-full">
         <div className="w-full h-[80vh] rounded-2xl overflow-hidden border border-black dark:border-white">
-          <img
+          {/* The container already has a fixed height, so no placeholder sizing is needed. */}
+          <LoadingImage
             src={garmentPhoto.src}
             alt={garmentPhoto.alt}
             onClick={() => setOpen(true)}
+            wrapperClassName="w-full h-full"
+            placeholderClassName=""
             className="cursor-pointer w-full h-full object-cover"
           />
         </div>
@@ -66,9 +70,14 @@ export default function GarmentTechpack({ garmentPhoto, techpackPhotos }) {
                   key={i}
                   className="border border-black rounded-2xl overflow-hidden bg-white dark:bg-neutral-800 flex items-center justify-center"
                 >
-                  <img
+                  {/* loading="eager": pages sit off-screen inside the flipbook, so native
+                      lazy loading could leave them blank when you flip to them. */}
+                  <LoadingImage
                     src={photo.src}
                     alt={photo.alt || `Tech pack page ${i + 1}`}
+                    loading="eager"
+                    wrapperClassName="w-full h-full"
+                    placeholderClassName=""
                     className="object-contain w-full h-full"
                   />
                 </div>

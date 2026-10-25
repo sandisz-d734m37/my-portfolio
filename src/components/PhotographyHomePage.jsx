@@ -263,7 +263,6 @@ const photos = [
 export default function PhotographyHomePage() {
   return (
     <div>
-      <h2 className="text-4xl font-semibold mb-6">Misc. Photography</h2>
       <PhotoGrid photos={photos} />
     </div>
   );

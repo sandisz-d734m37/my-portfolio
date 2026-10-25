@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo, useRef } from "react";
+import LoadingImage from "./LoadingImage";
 
 export default function PhotoGrid({ photos }) {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -125,16 +126,18 @@ export default function PhotoGrid({ photos }) {
       <div className="columns-1 sm:columns-2 md:columns-5 gap-1 space-y-1">
         {/* <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-2 lg:gap-4"> */}
         {shuffledPhotos.map((photo, index) => (
-          <img
-            key={index}
+          <LoadingImage
+            key={photo.src}
             src={photo.src}
             alt={photo.alt}
-            loading="lazy"
             onClick={() => {
               setActiveIndex(index);
               setZoomed(false);
             }}
-            className="w-full h-auto cursor-zoom-in hover:opacity-80 transition-opacity"
+            // break-inside-avoid keeps an image (and its placeholder) from splitting across columns
+            wrapperClassName="break-inside-avoid"
+            placeholderClassName="min-h-[280px]"
+            className="w-full h-auto cursor-zoom-in hover:opacity-80"
           />
         ))}
       </div>

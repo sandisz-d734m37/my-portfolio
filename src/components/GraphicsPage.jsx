@@ -1,3 +1,6 @@
+import { useMemo } from "react";
+import LoadingImage from "./LoadingImage";
+
 const photos = [
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/Theater.svg",
@@ -19,10 +22,10 @@ const photos = [
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/SUSPENSION_sticker.svg",
     alt: "Suspension of Disbelief Sticker Made SVG",
   },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/Souuund.svg",
-    alt: "Soooound graphic used on Octane Cap",
-  },
+  // {
+  //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/Souuund.svg",
+  //   alt: "Soooound graphic used on Octane Cap",
+  // },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/SharpP.svg",
     alt: "Puppet Theater Sharp P graphic SVG",
@@ -159,10 +162,10 @@ const photos = [
   //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/calltoday.svg",
   //   alt: "Don't be an asshole CALL TODAY",
   // },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/Sandiszworld.svg",
-    alt: "The flag of Sandiszworld featuring the SCMT star logo",
-  },
+  // {
+  //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/Sandiszworld.svg",
+  //   alt: "The flag of Sandiszworld featuring the SCMT star logo",
+  // },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/svgs/diefighting.svg",
     alt: "You either die fighting! Or you die crying! It's your choice!",
@@ -183,32 +186,59 @@ const photos = [
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/pngs/i_love_radio.png",
     alt: "Jacket concept featuring Puppet Theater signature cursive logo and I Love The Radio patches",
   },
-  {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/pngs/canttakeit.png",
-    alt: "T Shirt concept featuring American Flag, a true statement, and some children laughing at the ones who don't think the statement is true",
-  },
+  // {
+  //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/pngs/canttakeit.png",
+  //   alt: "T Shirt concept featuring American Flag, a true statement, and some children laughing at the ones who don't think the statement is true",
+  // },
   // {
   //   src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/graphics/pngs/give_me_back.png",
   //   alt: "Graphic concept featuring a gun and phrase give me back my bullets in my signature cracked up style, inspired by vintage Entombed tee",
   // },
 ];
+// =====================================================================
+// GraphicsPage.jsx — WHAT TO CHANGE
+//
+// 1) Change the first line of the file from:
+//
+//      const photos = [
+//
+//    to this (two lines — a new import, then the array as before):
+//
+//      import { useMemo } from "react";
+//      import LoadingImage from "./LoadingImage";
+//
+//      const photos = [
+//
+// 2) Leave the `photos` array exactly as it is.
+//
+// 3) Replace everything from `export default function PhotographyHomePage()`
+//    to the end of the file with the code below.
+// =====================================================================
 
-export default function PhotographyHomePage() {
+export default function GraphicsPage() {
+  // Shuffle ONCE per mount. The old version re-shuffled on every render, which
+  // (now that the page lives inside a collapsible section that re-renders when
+  // you toggle other sections) would make images swap places and reload.
+  const shuffled = useMemo(
+    () => [...photos].sort(() => Math.random() - 0.5),
+    [],
+  );
+
   return (
-    <div>
-      <h2 className="text-4xl font-semibold mb-6">Graphics</h2>
-      <div class="lg:columns-2 lg:gap-2 lg:space-y-2">
-        {[...photos]
-          .sort(() => Math.random() - 0.5)
-          .map((photo, index) => (
-            <img
-              key={index}
-              src={photo.src}
-              alt={photo.alt}
-              loading="lazy"
-              className="p-3 w-full mx-auto h-aut max-h-[95vh]"
-            />
-          ))}
+    <div className="pb-4">
+      {/* The section header now shows the "Graphics" title, so the old <h2> is removed. */}
+      <div className="lg:columns-2 lg:gap-2 lg:space-y-2">
+        {shuffled.map((photo) => (
+          <LoadingImage
+            key={photo.src}
+            src={photo.src}
+            alt={photo.alt}
+            // break-inside-avoid keeps each image (and its placeholder) from splitting across columns
+            wrapperClassName="break-inside-avoid"
+            placeholderClassName="min-h-[300px]"
+            className="p-3 w-full mx-auto h-auto max-h-[95vh]"
+          />
+        ))}
       </div>
     </div>
   );
