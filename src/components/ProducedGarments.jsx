@@ -1,4 +1,5 @@
 import GarmentTechpack from "./GarmentTechpack";
+import LoadingImage from "./LoadingImage";
 
 const garments = [
   {
@@ -190,12 +191,28 @@ const garments = [
 
 const alt_garments = [
   {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/_WARNER/SOAD_White.png",
+    alt: "T-Shirt designed by me, alongside the Warner Music Group, for System Of A Down's TOXICITY album 25th Anniversary",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/_WARNER/LIZZO_white.png",
+    alt: "T-Shirt designed by me, alongside the Warner Music Group, for Lizzo's 'BITCH' album rollout",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/_WARNER/LIZZO_black.png",
+    alt: "T-Shirt designed by me, alongside the Warner Music Group, for Lizzo's 'BITCH' album rollout",
+  },
+  {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/KumriOriginal/KumriOriginalFlatlay.png",
     alt: "iPhone Photo of Kumri Akhmedova Tribute Sweater I designed laying flat",
   },
   {
-    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/Everything+Tee/EverythingTeeFlatlay.png",
-    alt: "iPhone Photo of Everything Tee I designed laying flat",
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/ReHoodie/Patch_Hoodie_Real_F.png",
+    alt: "iPhone Photo of Patch ReHoodie I designed laying flat",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/ReHoodie/Patch_Hoodie_Real.png",
+    alt: "iPhone Photo of Patch ReHoodie I designed laying flat",
   },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/FinallyCrewneck/FinallyCrewneckFlatlay.png",
@@ -204,6 +221,10 @@ const alt_garments = [
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/Panel+Flannel/PanelFlannelFlatlay.png",
     alt: "iPhone Photo of Panel Flannel I designed laying flat",
+  },
+  {
+    src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/Everything+Tee/EverythingTeeFlatlay.png",
+    alt: "iPhone Photo of Everything Tee I designed laying flat",
   },
   {
     src: "https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/produced_garments/Nothing+Lasts+Tee/NothingLastsFlatlayFRONT.png",
@@ -222,37 +243,47 @@ const alt_garments = [
     alt: "iPhone Photo of Patch Thermal, featuring 18 unique graphics I designed laying flat",
   },
 ];
+// =====================================================================
+// ProducedGarments.jsx — WHAT TO CHANGE
+//
+// 1) Add this import at the very top of the file (next to GarmentTechpack):
+//
+//      import LoadingImage from "./LoadingImage";
+//
+// 2) Leave the `garments` and `alt_garments` arrays exactly as they are.
+//
+// 3) Replace everything from `export default function ProducedGarments()`
+//    to the end of the file with the code below.
+// =====================================================================
 
 export default function ProducedGarments() {
   return (
-    <div class="px-5">
-      <h2 className="text-4xl font-semibold mb-6">Produced Garments</h2>
+    <div className="px-5 pb-6">
+      {/* The section header now shows the "Produced Garments" title,
+          so the old <h2> is removed to avoid a duplicate. */}
       <div className="w-full flex justify-center pb-6">
-        <img
+        <LoadingImage
           src="https://sthieme-portfolio-assets.s3.us-east-2.amazonaws.com/photos/puppet_theater/IMG_9701.jpeg"
-          alt="garmentPhoto.alt"
+          alt="Puppet Theater garment photograph" // was the literal string "garmentPhoto.alt"; replace with real alt text
           className="object-contain max-h-[80vh] border border-black dark:border-white rounded-2xl"
+          placeholderClassName="min-h-[50vh] w-[min(90%,500px)] rounded-2xl"
         />
-        <br />
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-16 mb-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-16 mb-16">
         {alt_garments.map((garment, i) => (
-          <img
+          <LoadingImage
             key={i}
             src={garment.src}
             alt={garment.alt}
-            loading="lazy"
-            // onClick={() => {
-            //   setActiveIndex(index);
-            //   setZoomed(false);
-            // }}
-            className="w-full h-auto hover:opacity-70 transition-opacity"
+            wrapperClassName="w-full"
+            placeholderClassName="min-h-[260px]"
+            className="w-full h-auto hover:opacity-70"
           />
         ))}
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {garments.map((garment, i) => (
           <GarmentTechpack
             key={i}

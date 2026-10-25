@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import LoadingImage from "./LoadingImage";
 
 export default function PhotoGallery({ photos }) {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -83,20 +84,20 @@ export default function PhotoGallery({ photos }) {
 
             const maxScrollLeft = Math.max(
               0,
-              container.scrollWidth - container.clientWidth
+              container.scrollWidth - container.clientWidth,
             );
             const maxScrollTop = Math.max(
               0,
-              container.scrollHeight - container.clientHeight
+              container.scrollHeight - container.clientHeight,
             );
 
             container.scrollLeft = Math.min(
               Math.max(desiredScrollLeft, 0),
-              maxScrollLeft
+              maxScrollLeft,
             );
             container.scrollTop = Math.min(
               Math.max(desiredScrollTop, 0),
-              maxScrollTop
+              maxScrollTop,
             );
           });
         });
@@ -116,15 +117,18 @@ export default function PhotoGallery({ photos }) {
       {/* horizontal gallery */}
       <div className="flex overflow-x-auto gap-4 pb-4">
         {photos.map((photo, index) => (
-          <img
-            key={index}
+          <LoadingImage
+            key={photo.src}
             src={photo.src}
             alt={photo.alt}
             onClick={() => {
               setActiveIndex(index);
               setZoomed(false);
             }}
-            className="h-64 object-cover rounded-lg shadow-md cursor-zoom-in hover:opacity-80 transition-opacity flex-shrink-0"
+            // flex-shrink-0 moves to the wrapper, since the wrapper is now the flex item
+            wrapperClassName="flex-shrink-0 h-64"
+            placeholderClassName="w-48 rounded-lg overflow-hidden"
+            className="h-64 object-cover rounded-lg shadow-md cursor-zoom-in hover:opacity-80"
           />
         ))}
       </div>

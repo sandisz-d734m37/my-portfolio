@@ -205,8 +205,6 @@ const onModelShots = [
 export default function EcomPhotographs() {
   return (
     <div>
-      <h2 className="text-4xl font-semibold mb-6">E-Commerce Photography</h2>
-
       <h4 className="text-xl font-semibold mb-4">On-Body</h4>
       <PhotoGallery photos={onModelShots} />
 
