@@ -17,8 +17,7 @@ export default function GarmentTechpack({ garmentPhoto, techpackPhotos }) {
     <>
       {/* Garment Image (clickable) */}
       <div className="flex justify-center mb-4 w-full">
-        <div className="w-full h-[80vh] rounded-2xl overflow-hidden border border-black dark:border-white">
-          {/* The container already has a fixed height, so no placeholder sizing is needed. */}
+        <div className="group relative w-full h-[80vh] rounded-2xl overflow-hidden border border-black dark:border-white">
           <LoadingImage
             src={garmentPhoto.src}
             alt={garmentPhoto.alt}
@@ -27,6 +26,13 @@ export default function GarmentTechpack({ garmentPhoto, techpackPhotos }) {
             placeholderClassName=""
             className="cursor-pointer w-full h-full object-cover"
           />
+
+          {/* Hover hint */}
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <span className="rounded-lg px-5 py-2 text-sm font-medium text-white">
+              Click to view Tech Pack
+            </span>
+          </div>
         </div>
       </div>
 
